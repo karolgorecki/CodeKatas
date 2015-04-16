@@ -7,5 +7,9 @@ describe("Converter", function() {
         it('should be function', function() {
             expect(typeof Converter.roman2Arabic).toBe("function");
         });
+
+        it('should throw an error when no number was given', function() {
+            expect(function() { Converter.roman2Arabic()}).toThrow(new Error("No number was given"));
+        });
     });
 });
