@@ -15,5 +15,9 @@ describe("Converter", function() {
         it('should return 1 when I was given', function() {
             expect(Converter.roman2Arabic('I')).toEqual(1);
         });
+
+        it('should return 2 when II was given', function() {
+            expect(Converter.roman2Arabic('II')).toEqual(2);
+        });
     });
 });

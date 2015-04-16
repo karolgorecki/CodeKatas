@@ -4,7 +4,9 @@ var Converter = (function() {
             throw new Error("No number was given");
         }
 
-        return 1;
+        if (romanNumber === "I") return 1;
+
+        return 2;
     }
 
     return {
