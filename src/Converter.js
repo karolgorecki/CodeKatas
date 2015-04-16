@@ -1,12 +1,20 @@
 var Converter = (function() {
     var roman2Arabic = function(romanNumber) {
+        var arabicNumber = 0;
+
         if (typeof romanNumber === 'undefined') {
             throw new Error("No number was given");
         }
 
-        if (romanNumber === "I") return 1;
+        var parts = romanNumber.split('');
 
-        return 2;
+        for (var i = parts.length - 1; i >= 0; i--) {
+            if (parts[i] === "I") {
+                arabicNumber += 1;
+            }
+        };
+
+        return arabicNumber;
     }
 
     return {
