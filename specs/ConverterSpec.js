@@ -24,8 +24,36 @@ describe('Converter', function() {
             expect(Converter.roman2Arabic('III')).toEqual(3);
         });
 
+        it('should return 4 when IV was given', function() {
+            expect(Converter.roman2Arabic('IV')).toEqual(4);
+        });
+
+        it('should return 5 when V was given', function() {
+            expect(Converter.roman2Arabic('V')).toEqual(5);
+        });
+
+        it('should return 6 when VI was given', function() {
+            expect(Converter.roman2Arabic('VI')).toEqual(6);
+        });
+
+        it('should return 7 when VII was given', function() {
+            expect(Converter.roman2Arabic('VII')).toEqual(7);
+        });
+
+        it('should return 9 when IX was given', function() {
+            expect(Converter.roman2Arabic('IX')).toEqual(9);
+        });
+
         it('should return 10 when X was given', function() {
             expect(Converter.roman2Arabic('X')).toEqual(10);
+        });
+
+        it('should return 50 when L was given', function() {
+            expect(Converter.roman2Arabic('L')).toEqual(50);
+        });
+
+        it('should return 99 when XCIX was given', function() {
+            expect(Converter.roman2Arabic('XCIX')).toEqual(99);
         });
     });
 });
