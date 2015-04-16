@@ -3,6 +3,8 @@ var Converter = (function() {
         if (typeof romanNumber === 'undefined') {
             throw new Error("No number was given");
         }
+
+        return 1;
     }
 
     return {

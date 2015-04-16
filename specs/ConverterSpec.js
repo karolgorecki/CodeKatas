@@ -11,5 +11,9 @@ describe("Converter", function() {
         it('should throw an error when no number was given', function() {
             expect(function() { Converter.roman2Arabic()}).toThrow(new Error("No number was given"));
         });
+
+        it('should return 1 when I was given', function() {
+            expect(Converter.roman2Arabic('I')).toEqual(1);
+        });
     });
 });
