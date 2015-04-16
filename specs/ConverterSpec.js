@@ -1,15 +1,15 @@
-describe("Converter", function() {
-    it("should init and return object", function() {
-        expect(typeof window.Converter).toBe("object");
+describe('Converter', function() {
+    it('should init and return object', function() {
+        expect(typeof window.Converter).toBe('object');
     });
 
     describe('roman2Arabic', function() {
         it('should be function', function() {
-            expect(typeof Converter.roman2Arabic).toBe("function");
+            expect(typeof Converter.roman2Arabic).toBe('function');
         });
 
         it('should throw an error when no number was given', function() {
-            expect(function() { Converter.roman2Arabic()}).toThrow(new Error("No number was given"));
+            expect(function() { Converter.roman2Arabic()}).toThrow(new Error('No number was given'));
         });
 
         it('should return 1 when I was given', function() {
@@ -22,6 +22,10 @@ describe("Converter", function() {
 
         it('should return 3 when III was given', function() {
             expect(Converter.roman2Arabic('III')).toEqual(3);
+        });
+
+        it('should return 10 when X was given', function() {
+            expect(Converter.roman2Arabic('X')).toEqual(10);
         });
     });
 });
