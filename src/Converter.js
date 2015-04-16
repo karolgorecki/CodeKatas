@@ -1,3 +1,7 @@
 var Converter = (function() {
-    return {};
+    var roman2Arabic = function() {}
+    
+    return {
+        roman2Arabic: roman2Arabic
+    };
 })();
