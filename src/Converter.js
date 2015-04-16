@@ -1,0 +1,3 @@
+var Converter = (function() {
+    return {};
+})();
